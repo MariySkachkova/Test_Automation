@@ -8,13 +8,13 @@ const {
 } = require('./functions');
 
 test('arrayContainsObject should return true if array contains the specified object', () => {
-    const array = [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }];
-    const object = { id: 1, name: 'John' };
+    const array = [{ id: 1, name: 'Mariia' }, { id: 2, name: 'Natali' }];
+    const object = { id: 1, name: 'Mariia' };
     expect(arrayContainsObject(array, object)).toBe(true);
 });
 
 test('arrayContainsObject should return false if array does not contain the specified object', () => {
-    const array = [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }];
+    const array = [{ id: 1, name: 'Mariia' }, { id: 2, name: 'Natali' }];
     const object = { id: 3, name: 'Alice' };
     expect(arrayContainsObject(array, object)).toBe(false);
 });
@@ -32,13 +32,13 @@ test('textContainsWord should return false if text does not contain the specifie
 });
 
 test('objectReturnedByFunctionHasField should return true if object returned by function has the specified field', () => {
-    const func = () => ({ id: 1, name: 'John' });
+    const func = () => ({ id: 1, name: 'Mariia' });
     const field = 'name';
     expect(objectReturnedByFunctionHasField(func, field)).toBe(true);
 });
 
 test('objectReturnedByFunctionHasField should return false if object returned by function does not have the specified field', () => {
-    const func = () => ({ id: 1, age: 30 });
+    const func = () => ({ id: 1, age: 21 });
     const field = 'name';
     expect(objectReturnedByFunctionHasField(func, field)).toBe(false);
 });
