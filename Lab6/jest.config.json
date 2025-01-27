@@ -1,0 +1,22 @@
+{
+  "reporters": [
+    "default",
+    [
+      "./node_modules/jest-html-reporter",
+      {
+        "pageTitle": "Test Report",
+        "includeConsoleLog": true,
+        "expand": true,
+        "includeFailureMsg": true
+      }
+    ],
+    [
+      "jest-junit",
+      {
+        "outputName": "test-results.xml"
+      }
+    ]
+  ],
+  "testResultsProcessor": "jest-stare",
+  "testEnvironment": "allure-jest/node"
+}
