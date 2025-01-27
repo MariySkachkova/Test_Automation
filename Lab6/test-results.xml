@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="2" errors="0" time="6.739">
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2024-05-02T18:46:12" time="6.62" tests="7">
+    <testcase classname=" The Google home page is loading" name=" The Google home page is loading" time="1.999">
+    </testcase>
+    <testcase classname=" The search field is available" name=" The search field is available" time="0.952">
+    </testcase>
+    <testcase classname=" The &quot;Search&quot; button is present" name=" The &quot;Search&quot; button is present" time="0.506">
+    </testcase>
+    <testcase classname=" The Google logo is displayed" name=" The Google logo is displayed" time="0.355">
+    </testcase>
+    <testcase classname=" Incorrect page title" name=" Incorrect page title" time="0.341">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;DuckDuckGo&quot;
+Received: &quot;Google&quot;
+    at Object.toBe (D:\НАВЧАННЯ\AUTOMATED\Lab6\google.test.js:46:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname=" Missing element on page" name=" Missing element on page" time="0.355">
+      <failure>NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[id=&quot;missingElement&quot;]&quot;}
+  (Session info: chrome=124.0.6367.118)
+    at Object.throwDecodedError (D:\НАВЧАННЯ\AUTOMATED\Lab6\node_modules\selenium-webdriver\lib\error.js:521:15)
+    at parseHttpResponse (D:\НАВЧАННЯ\AUTOMATED\Lab6\node_modules\selenium-webdriver\lib\http.js:514:13)
+    at Executor.execute (D:\НАВЧАННЯ\AUTOMATED\Lab6\node_modules\selenium-webdriver\lib\http.js:446:28)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Driver.execute (D:\НАВЧАННЯ\AUTOMATED\Lab6\node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+    at Object.&lt;anonymous&gt; (D:\НАВЧАННЯ\AUTOMATED\Lab6\google.test.js:52:28)</failure>
+    </testcase>
+    <testcase classname=" Verify page layout" name=" Verify page layout" time="0.598">
+    </testcase>
+  </testsuite>
+</testsuites>
